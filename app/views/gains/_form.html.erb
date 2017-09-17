@@ -1,0 +1,34 @@
+<%= form_with(model: gain, local: true) do |form| %>
+  <% if gain.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(gain.errors.count, "error") %> prohibited this gain from being saved:</h2>
+
+      <ul>
+      <% gain.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :総収支額 %>
+    <%= form.number_field :gain_price, id: :gain_gain_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :購入時通貨価格 %>
+    <%= form.number_field :purchase_price, id: :gain_purchase_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :現在のレート %>
+    <%= form.number_field :currrent_price, id: :gain_currrent_price %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+
+<%= link_to"トップ＿通貨購入コマンドにもどる",new_share_path %>

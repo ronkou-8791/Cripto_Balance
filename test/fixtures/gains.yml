@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  gain_price: 1
+  purchase_price: 1
+  currrent_price: 1
+
+two:
+  gain_price: 1
+  purchase_price: 1
+  currrent_price: 1

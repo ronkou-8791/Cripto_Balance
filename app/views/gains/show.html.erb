@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>収支計算価格:</strong>
+  <%= @gain.gain_price %>
+</p>
+
+<p>
+  <strong>購入時通貨価格:</strong>
+  <%= @gain.purchase_price %>
+</p>
+
+<p>
+  <strong>現在のレート:</strong>
+  <%= @gain.currrent_price %>
+</p>
+
+|
+<%= link_to '収支結果', gains_path %>

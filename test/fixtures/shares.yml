@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  create_at: 2017-09-12 18:43:36
+  coin: 1
+  btcjpy: 1
+
+two:
+  create_at: 2017-09-12 18:43:36
+  coin: 1
+  btcjpy: 1

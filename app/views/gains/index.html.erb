@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>収支結果履歴</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>収支計算価格</th>
+      <th>購入時通貨価格</th>
+      <th>現在のレート</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @gains.each do |gain| %>
+      <tr>
+        <td><%= gain.gain_price %></td>
+        <td><%= gain.purchase_price %></td>
+        <td><%= gain.currrent_price %></td>
+        <td><%= link_to '詳細', gain %></td>
+        <td><%#= link_to '編集', edit_gain_path(gain) %></td>
+        <td><%= link_to '削除', gain, method: :delete, data: { confirm: '削除してよろしいですか?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to '収支結果へ戻る', new_gain_path %>

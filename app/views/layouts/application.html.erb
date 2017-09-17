@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ScaffoldVcp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+  <header>
+   <ul>
+     <li><a href="#">COIN BALANCE</a></li>
+     <li><a href="#">アプリについて</a></li>
+     <li><a href="#">確定申告</a></li>
+   </ul>
+  </header>
+
+
+    <%= yield %>
+
+    <footer>
+     <p>共同開発[]</p>
+     <p>© 2017 Copyright()</p>
+    </footer>
+  </body>
+</html>
