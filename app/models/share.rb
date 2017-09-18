@@ -1,3 +1,3 @@
 class Share < ApplicationRecord
-  belongs_to :count
+  #belongs_to :count
 end
