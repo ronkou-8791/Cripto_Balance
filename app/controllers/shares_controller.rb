@@ -6,8 +6,8 @@ class SharesController < ApplicationController
   def index
     #binding.pry
     @shares = Share.all
-    #@shares = CSV.read('eth.com.csv')
-    #@shares.each {|share| Share.create(create_at: Time.strptime(share[0], "%Y年%m月%d日"), btcjpy: share[1].gsub(/(\d{0,3}),(\d{3})/, '\1\2').to_i)}
+    @shares = CSV.read('eth.com.csv')
+    @shares.each {|share| Share.create(create_at: Time.strptime(share[0], "%Y年%m月%d日"), btcjpy: share[1].gsub(/(\d{0,3}),(\d{3})/, '\1\2').to_i)}
 
 
   end
