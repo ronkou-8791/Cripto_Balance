@@ -22,7 +22,7 @@
     <%= form.label :通貨購入量 %>
     <!-- <%= form.number_field :purchase_price, id: :gain_purchase_price ,min: 0.01 ,class:"form-control" %> -->
     <!-- 数値 -->
-    <%= form.number_field :purchase_price, id: :gain_purchase_price, min:0.00000001,max:100,step:0.00000001 ,class:"form-control" %>
+    <%= form.number_field :purchase_price, id: :gain_purchase_price, min:0.000001,max:100,step:0.000001 ,class:"form-control" %>
 
 
   </div>
@@ -34,9 +34,10 @@
 
   <div class="field">
     <%= form.label :通貨売却量 %>
-    <%= form.number_field :currrent_price, id: :gain_currrent_price, min:0.00000001,max:100,step:0.00000001 ,class:"form-control" %>
+    <%= form.number_field :currrent_price, id: :gain_currrent_price, min:0.000001,max:100,step:0.000001 ,class:"form-control" %>
   </div>
 
+  <br>
   <div class="actions">
     <%= form.submit "収支計算へ" %>
   </div>

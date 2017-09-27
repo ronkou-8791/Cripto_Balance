@@ -13,19 +13,19 @@
 <br>
 <p>
   <strong>通貨購入金額</strong>
-  <%= @bit_coin %>
+  <h5><%= @bit_coin %> JPY</h5>
 </p>
 <br>
 <p>
   <strong>通貨売却金額</strong>
-  <%= @ask_coin %>
+  <h5><%= @ask_coin %> JPY</5>
 </p>
 <br>
 <p>
   <h3>収支金額</h3>
-  <%= @ask_coin - @bit_coin %>
+  <h3><%= @ask_coin - @bit_coin %> JPY</h3>
 </p>
 
 
-<%#= link_to '編集', edit_share_path(@share) %> 
+<%#= link_to '編集', edit_share_path(@share) %>
 <%#= link_to '通貨購入入力履歴', shares_path %>
