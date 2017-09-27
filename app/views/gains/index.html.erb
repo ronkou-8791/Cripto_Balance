@@ -15,7 +15,7 @@
     <% @gains.each do |gain| %>
       <tr>
         <td><%= gain.purchase %></td>
-        <td><%= gain.gain_price %></td>
+        <!-- <td><%= gain.gain_price %></td> -->
         <td><%= link_to '詳細', gain %></td>
         <td><%#= link_to '編集', edit_gain_path(gain) %></td>
         <td><%= link_to '削除', gain, method: :delete, data: { confirm: '削除してよろしいですか?' } %></td>
