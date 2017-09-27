@@ -10,13 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170912102817) do
-
-  create_table "counts", force: :cascade do |t|
-    t.integer "amount"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20170925094650) do
 
   create_table "gains", force: :cascade do |t|
     t.integer "gain_price"
@@ -24,6 +18,8 @@ ActiveRecord::Schema.define(version: 20170912102817) do
     t.integer "currrent_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.datetime "purchase"
+    t.datetime "sell"
   end
 
   create_table "shares", force: :cascade do |t|
@@ -32,6 +28,7 @@ ActiveRecord::Schema.define(version: 20170912102817) do
     t.integer "btcjpy"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "amount"
   end
 
 end

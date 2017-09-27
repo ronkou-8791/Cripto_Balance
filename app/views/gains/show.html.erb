@@ -1,19 +1,31 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>収支計算価格:</strong>
-  <%= @gain.gain_price %>
+  <strong>通貨購入日時:</strong>
+  <%#= @bit_coin %>
+  <%= @gain.purchase %>
 </p>
-
 <p>
-  <strong>購入時通貨価格:</strong>
-  <%= @gain.purchase_price %>
+  <strong>通貨売却日時:</strong>
+  <%#= @bit_coin %>
+  <%= @gain.sell %>
 </p>
-
+<br>
 <p>
-  <strong>現在のレート:</strong>
-  <%= @gain.currrent_price %>
+  <strong>通貨購入金額</strong>
+  <%= @bit_coin %>
+</p>
+<br>
+<p>
+  <strong>通貨売却金額</strong>
+  <%= @ask_coin %>
+</p>
+<br>
+<p>
+  <h3>収支金額</h3>
+  <%= @ask_coin - @bit_coin %>
 </p>
 
-|
-<%= link_to '収支結果', gains_path %>
+
+<%#= link_to '編集', edit_share_path(@share) %> |
+<%#= link_to '通貨購入入力履歴', shares_path %>

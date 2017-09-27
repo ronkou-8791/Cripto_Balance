@@ -1,13 +1,12 @@
 
 <p id="notice"><%= notice %></p>
-<h2>購入通貨入力履歴</h2>
+<h2>売買通貨履歴</h2>
 
 <table>
   <thead>
     <tr>
-      <th>通貨購入日時</th>
-      <th>購入通貨種類</th>
-      <th>通貨購入に利用した通貨</th>
+      <th>購入通貨日時</th>
+      <th>終値</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,12 +14,13 @@
   <tbody>
     <% @shares.each do |share| %>
       <tr>
+
         <td><%= share.create_at %></td>
-        <td><%= share.coin %></td>
         <td><%= share.btcjpy %></td>
-        <td><%= link_to '詳細', share %></td>
-        <td><%= link_to '編集', edit_share_path(share) %></td>
-        <td><%= link_to '削除', share, method: :delete, data: { confirm: '削除してよろしいですか?' } %></td>
+        <td><%#= share.amount %></td>
+        <td><%#= link_to '詳細', share %></td>
+        <td><%#= link_to '編集', edit_share_path(share) %></td>
+        <td><%#= link_to '削除', share, method: :delete, data: { confirm: '削除してよろしいですか?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to '通貨購入コマンド', new_share_path %>
+<%= link_to '仮想通貨売買へ', new_share_path %>

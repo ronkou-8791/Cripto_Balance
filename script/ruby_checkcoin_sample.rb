@@ -12,10 +12,10 @@ puts(data)
 # 50ずつしか取れないので、idを保持しておいて、offsetを使って途中から取得
 
 # このコードいらない？
-# data.each do |d|
-#   # Share.create(create_at: d['create_at'],id: d['id'])
-#   puts(d['id'])
-# end
+#data.each do |d|
+#Share.create(create_at: d['create_at'],id: d['id'])
+#puts(d['id'])
+#end
 
 # body = open("https://coincheck.com/api/trades?offset=102", &:read)
 # data = JSON.parse(body)

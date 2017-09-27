@@ -1,3 +1,6 @@
+<div class="container">
+ <div class="wrapper col-md-4 col-md-offset-4 col-sm-10">
+
 <%= form_with(model: share, local: true) do |form| %>
   <% if share.errors.any? %>
     <div id="error_explanation">
@@ -11,23 +14,42 @@
     </div>
   <% end %>
 
+
+
   <div class="field">
-    <%= form.label :通貨購入日時 %>
-    <%= form.datetime_select :create_at, id: :share_create_at %>
+    <%= form.label :通貨購入日 %>
+    <%= form.date_select :create_at, id: :share_create_at %>
+  </div>
+
+  <!-- <div class="field"> -->
+    <!-- <%= form.label :購入通貨種類 %>   <! データベースでは、終値のCSVデータ＝btcjpyで取得している -->
+    <!-- <%= form.select :btcjpy, [["BTC", "BTC"], ["ETH", "ETH"]] ,class:"form-control" %>
+  </div> -->
+
+  <div class="field">
+    <%= form.label :通貨購入量 %>
+    <%= form.number_field :amount, min:0.00000001,max:100,step:0.00000001 ,class:"form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :購入通貨種類 %>
-    <%= form.select :coin, [["BTC", "BTC"], ["ETH", "ETH"], ["ETC", "ETC"], ["LTC", "LTC"], ["BCH", "BCH"], ["LISK", "LISK"], ["NEM", "NEM"], ["XRP", "XRP"], ["MONA", "MONA"]] ,class:"form-control" %>
+    <%= form.label :通貨売却日 %>
+    <%= form.date_select :ask_create_at, id: :share_create_at %>
   </div>
 
+  <!-- <div class="field">
+    <%= form.label :売却通貨種類 %>
+    <%= form.select :btcjpy, [["BTC", "BTC"], ["ETH", "ETH"]] ,class:"form-control" %>
+  </div> -->
+
   <div class="field">
-    <%= form.label :通貨購入に利用した通貨 %>
-    <%= form.select :btcjpy, [["BTC", "BTC"], ["JPY", "JPY"]] ,class:"form-control" %>
+    <%= form.label :通貨売却量 %>
+    <%= form.number_field :ask, min:0.00000001,max:100,step:0.00000001 ,class:"form-control" %>
   </div>
-  
+
   <br>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "収支計算へ" %>
   </div>
 <% end %>
+ </div>
+</div>
