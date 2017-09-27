@@ -5,8 +5,8 @@ class GainsController < ApplicationController
   # GET /gains.json
   def index
     @gains = Gain.all
-    #@gains = CSV.read('BTC.csv')
-    #@gains.each {|gain| Gain.create(purchase: Time.strptime(gain[0], "%Y年%m月%d日"), gain_price: gain[1].gsub(/(\d{0,3}),(\d{3})/, '\1\2').to_i)}
+    @gains = CSV.read('BTC.csv')
+    @gains.each {|gain| Gain.create(purchase: Time.strptime(gain[0], "%Y年%m月%d日"), gain_price: gain[1].gsub(/(\d{0,3}),(\d{3})/, '\1\2').to_i)}
 
   end
 
