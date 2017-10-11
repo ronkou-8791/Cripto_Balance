@@ -7,7 +7,8 @@ class SharesController < ApplicationController
     #binding.pry
     @shares = Share.all
     #@shares = CSV.read('eth.com.csv')
-    #@shares.each {|share| Share.create(create_at: Time.strptime(share[0], "%Y年%m月%d日"), btcjpy: share[1].gsub(/(\d{0,3}),(\d{3})/, '\1\2').to_i)}
+    #binding.pry
+    #@shares.each {|share| Share.create(purchase: Time.strptime(share[0], "%Y年%m月%d日"), btcjpy: share[1].gsub(/(\d{0,3}),(\d{3})/, '\1\2').to_i)}
 
 
   end
@@ -38,8 +39,8 @@ class SharesController < ApplicationController
     #binding.pry
     start_day = "#{params[:share][params[:share].keys[0]]}-#{params[:share][params[:share].keys[1]]}-#{params[:share][params[:share].keys[2]]}"
     end_day = "#{params[:share][params[:share].keys[4]]}-#{params[:share][params[:share].keys[5]]}-#{params[:share][params[:share].keys[6]]}"
-    format_start_day = Time.strptime(start_day, "%Y-%m-%d")
-    format_end_day = Time.strptime(end_day, "%Y-%m-%d")
+    format_start_day = Time.strptime(start_day, "%Y-%m-%d").to_s(:db)
+    format_end_day = Time.strptime(end_day, "%Y-%m-%d").to_s(:db)
 
     #binding.pry
     @bit_coin = Share.find_by(create_at: format_start_day).btcjpy * params[:share][:amount].to_f
