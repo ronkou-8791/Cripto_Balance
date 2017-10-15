@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>通貨購入日時:</strong>
+  <tr>通貨購入日時:</tr>
   <%#= @bit_coin %>
   <%= @gain.purchase %>
 </p>
 <p>
-  <strong>通貨売却日時:</strong>
+  <tr>通貨売却日時:</tr>
   <%#= @bit_coin %>
   <%= @gain.sell %>
 </p>
 <br>
 <p>
-  <strong>通貨購入金額</strong>
+  <tr>通貨購入金額</tr>
   <h5><%= @bit_coin %> JPY</h5>
 </p>
 <br>
 <p>
-  <strong>通貨売却金額</strong>
+  <tr>通貨売却金額</tr>
   <h5><%= @ask_coin %> JPY</5>
 </p>
 <br>
 <p>
-  <h3>収支金額</h3>
-  <h3><%= @ask_coin - @bit_coin %> JPY</h3>
+  <h5>通貨売却金額 - 通貨購入金額 = 収支金額</h5>
+  <h1><%= @ask_coin - @bit_coin %> JPY</h1>
 </p>
 
 

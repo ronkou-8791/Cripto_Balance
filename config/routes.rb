@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :ethbtcs
   resources :gains
   resources :counts
   resources :shares do

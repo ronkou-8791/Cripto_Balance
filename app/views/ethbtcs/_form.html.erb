@@ -1,0 +1,47 @@
+<div class="container">
+ <div class="wrapper col-md-4 col-md-offset-4 col-sm-10">
+<%= form_with(model: ethbtc, local: true) do |form| %>
+  <% if ethbtc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ethbtc.errors.count, "error") %> prohibited this ethbtc from being saved:</h2>
+
+      <ul>
+      <% ethbtc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :通貨購入日を選択 %>
+    <%= form.date_select :buy, id: :ethbtc_buy %>
+  </div>
+
+  <div class="field">
+    <!-- <%= form.label :buy_size %> -->
+    <%= form.number_field :buy_size, id: :ethbtc_buy_size, min:0.000001,max:100,step:0.000001 ,class:"form-control" ,placeholder: "BTC購入量を入力" %>
+  </div>
+  <br>
+  <div class="field">
+    <%= form.label :通貨売却日を選択 %>
+    <%= form.date_select :sell, id: :ethbtc_sell %>
+  </div>
+
+  <div class="field">
+    <!-- <%= form.label :sell_size %> -->
+    <%= form.number_field :sell_size, id: :ethbtc_sell_size, min:0.000001,max:100,step:0.000001 ,class:"form-control" ,placeholder: "BTC売却量を入力" %>
+  </div>
+
+  <!-- <div class="field"> -->
+    <!-- <%= form.label :price %> -->
+    <!-- <%= form.number_field :price, id: :ethbtc_price %> -->
+  <!-- </div> -->
+  <br>
+  <br>
+  <div class="actions">
+    <%= form.submit "収支計算へ" %>
+  </div>
+<% end %>
+ </div>
+</div>

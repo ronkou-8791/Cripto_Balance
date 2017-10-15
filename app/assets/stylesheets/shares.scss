@@ -12,6 +12,27 @@ footer {
   font-size: 12px;
   position: absolute;
   bottom: 0;
+  letter-spacing: 50px;
+  height: 60px;
+}
+
+footer ul li {
+  position: absolute;
+  padding-bottom: 20px;
+  bottom: 0;
+  right: -500px;
+  list-style: none;
+  display: block;
+  word-spacing: 30px;
+}
+
+footer li {
+  position: absolute;
+  padding-bottom: 20px;
+  left: 30px;
+  bottom: 0;
+  list-style: none;
+  display: block;
 }
 
 html {
@@ -51,4 +72,25 @@ header ul:after {
   content: "";
   display: block;
   clear: both;
+}
+
+div h2 {
+max-width: 50%;
+
+margin: 0 auto;
+}
+
+p {
+  padding-top: 10px;
+  max-width: 50%;
+  margin: 0 auto;
+  color: #000000;
+}
+
+h1 {
+  color: #FF0000;
+}
+
+h3 {
+  color: #BDB76B;
 }

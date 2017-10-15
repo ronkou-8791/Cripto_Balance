@@ -18,9 +18,10 @@ class SharesController < ApplicationController
   def show
     id = params[:id] #=> id = 1
     ask = params[:ask] #=> ask = '売却量'
-    bitjpy = params[:bitjpy]
-    create_at = params[:create_at]
-    ask_create_at = params[:ask_create_at]
+    bitjpy = params[:bitjpy] #=> bitjpy = '相場'
+    create_at = params[:create_at]  #=> create_at = '購入日'
+    ask_create_at = params[:ask_create_at]  #=> ask_create_at = '売却日'
+    amount = params[:amount] #=> amount = '購入量'
   end
 
   # GET /shares/new

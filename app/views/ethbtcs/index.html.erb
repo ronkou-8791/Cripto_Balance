@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Ethbtcs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Buy</th>
+      <th>Buy size</th>
+      <th>Sell</th>
+      <th>Sell size</th>
+      <!-- <th>Price</th> -->
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ethbtcs.each do |ethbtc| %>
+      <tr>
+        <td><%= ethbtc.buy %></td>
+        <td><%= ethbtc.buy_size %></td>
+        <td><%= ethbtc.sell %></td>
+        <td><%= ethbtc.sell_size %></td>
+        <!-- <td><%= ethbtc.price %></td> -->
+        <td><%= link_to 'Show', ethbtc %></td>
+        <td><%= link_to 'Edit', edit_ethbtc_path(ethbtc) %></td>
+        <td><%= link_to 'Destroy', ethbtc, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ethbtc', new_ethbtc_path %>

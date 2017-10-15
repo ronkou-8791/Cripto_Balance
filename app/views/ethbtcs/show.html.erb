@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <tr>通貨購入日:</tr>
+  <%= @ethbtc.buy %>
+</p>
+
+<p>
+  <tr>BTC購入量:</tr>
+  <%= @ethbtc.buy_size %>
+</p>
+
+<p>
+  <tr>通貨購入金額</tr>
+  <h5><%= @bit_coin %> BTC</h5>
+</p>
+
+<p>
+  <tr>通貨売却日:</tr>
+  <%= @ethbtc.sell %>
+</p>
+
+<p>
+  <tr>BTC売却量:</tr>
+  <%= @ethbtc.sell_size %>
+</p>
+
+<p>
+  <tr>通貨売却金額</tr>
+  <h5><%= @ask_coin %> BTC</5>
+</p>
+
+<p>
+  <h5>通貨売却金額 - 通貨購入金額 = 収支金額</h5>
+  <h1><%= @ask_coin - @bit_coin %> BTC</h1>
+</p>
+
+
+<!-- <%= link_to 'Back', ethbtcs_path %> -->

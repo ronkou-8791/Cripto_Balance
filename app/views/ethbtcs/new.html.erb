@@ -1,0 +1,11 @@
+<div>
+ <p>
+  <h2><%= image_tag 'ethereum.png', :size => '69x69' %> Ethereum</h2>
+ </p>
+</div>
+
+<h3>ETH_BTC</h3>
+<br>
+<%= render 'form', ethbtc: @ethbtc %>
+
+<%= link_to 'Back', ethbtcs_path %>

@@ -1,0 +1,2 @@
+module EthbtcsHelper
+end

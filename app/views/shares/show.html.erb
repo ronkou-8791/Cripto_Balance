@@ -1,15 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>通貨購入日時:</strong>
+<tr>
+  <p>通貨購入日時:</p>
   <%#= @bit_coin %>
   <%= @share.create_at %>
-</p>
+</tr>
 <br>
 <p>
-  <!-- <strong>通貨売却日時:</strong> -->
+  <strong>通貨売却日時:</strong>
   <%#= @bit_coin %>
-  <!-- <%= @share.ask_create_at %> -->
+  <%= @share.ask_create_at %>
 </p>
 
 <p>
@@ -23,19 +23,19 @@
 </p>
 
 <p>
-  <strong>通貨購入金額</strong>
+  <tr>通貨購入金額</tr>
   <h5><%= @bit_coin %> JPY</h5>
 </p>
 <br>
 <p>
-  <strong>通貨売却金額</strong>
+  <tr>通貨売却金額</tr>
   <h5><%= @ask_coin %> JPY</h5>
 </p>
 <br>
 <p>
-  <h2>収支金額</h2>
-  <h3><%= @ask_coin - @bit_coin %> JPY</h3>
+  <h5>通貨売却金額 - 通貨購入金額 = 収支金額</h5>
+  <h1><%= @ask_coin - @bit_coin %> JPY</h1>
 </p>
-
+<br>
 <%#= link_to '編集', edit_share_path(@share) %>
-<%#= link_to '通貨購入入力履歴', shares_path %>
+<a><%= link_to "入力画面へ", new_share_path %></a>
