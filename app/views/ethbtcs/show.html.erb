@@ -5,33 +5,33 @@
   <%= @ethbtc.buy %>
 </p>
 
-<p>
-  <tr>BTC購入量:</tr>
+<!-- <p>
+  <tr>ETH購入量:</tr>
   <%= @ethbtc.buy_size %>
-</p>
-
+</p> -->
+<br>
 <p>
-  <tr>通貨購入金額</tr>
+  <tr>支払ったBTC</tr>
   <h5><%= @bit_coin %> BTC</h5>
 </p>
-
+<br>
 <p>
   <tr>通貨売却日:</tr>
   <%= @ethbtc.sell %>
 </p>
-
-<p>
-  <tr>BTC売却量:</tr>
+<br>
+<!-- <p>
+  <tr>ETH売却量:</tr>
   <%= @ethbtc.sell_size %>
-</p>
+</p> -->
 
 <p>
-  <tr>通貨売却金額</tr>
+  <tr>取得したBTC</tr>
   <h5><%= @ask_coin %> BTC</5>
 </p>
-
+<br>
 <p>
-  <h5>通貨売却金額 - 通貨購入金額 = 収支金額</h5>
+  <h5>取得したBTC - 支払ったBTC = BTCの収支結果</h5>
   <h1><%= @ask_coin - @bit_coin %> BTC</h1>
 </p>
 
