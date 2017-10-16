@@ -12,6 +12,4 @@ Gain.new(purchase: csv_data[0][0], gain_price: csv_data[0][1])
 
 
 Gain.new(purchase: csv_data[0], gain_price: csv_data[1])
-
-
-csv_data.each {|data| Gain.create(purchase: Time.strptime(csv_data[0], "%Y年%m月%d日"), gain_price: csv_data[1])}
+csv_data.each {|data| Gain.create(purchase: Time.strptime(data[0], "%Y年%m月%d日"), gain_price: data[1])}
