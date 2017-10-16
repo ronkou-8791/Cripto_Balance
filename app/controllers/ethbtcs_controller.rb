@@ -6,9 +6,9 @@ class EthbtcsController < ApplicationController
   def index
     #binding.pry
     @ethbtcs = Ethbtc.all
-    #@ethbtcs = CSV.read('eth-btc-max.csv')
+    @ethbtcs = CSV.read('eth-btc-max.csv')
     #binding.pry
-    #@ethbtcs.each {|ethbtc| Ethbtc.create(buy: Time.strptime(ethbtc[0], "%Y年%m月%d日"), price: ethbtc[1].gsub(/(\d{0,3}),(\d{3})/, '\1\2').to_f)}
+    @ethbtcs.each {|ethbtc| Ethbtc.create(buy: Time.strptime(ethbtc[0], "%Y年%m月%d日"), price: ethbtc[1].gsub(/(\d{0,3}),(\d{3})/, '\1\2').to_f)}
 
   end
 
