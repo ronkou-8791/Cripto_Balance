@@ -7,3 +7,32 @@ max-width: 50%;
 
 margin: 0 auto;
 }
+
+
+/* --- ボックス --- */
+div.section {
+width: 350px; /* ボックスの幅 */
+padding-bottom: 5px; /* ボックスの下パディング */
+background: #F5F5F5 url(maru2_300_bottom.gif) no-repeat bottom; /* ボックスの背景 */
+font-size: 80%;
+color: #000000;
+margin: auto;
+border-width: thin;
+border-color: #D3D3D3;
+border-style: solid;
+}
+
+/* --- 見出し --- */
+div.section h3 {
+margin: 0; /* 見出しのマージン */
+padding: 1em 15px 0 10px; /* 見出しのパディング（上右下左） */
+background: #F5F5F5 url(maru2_300_top.gif) no-repeat top; /* 見出しの背景 */
+font-size: 100%; /* 見出しの文字サイズ */
+}
+
+/* --- ボックス内の段落 --- */
+div.section p {
+margin: 1em 15px 1em 10px; /* 段落のマージン（上右下左） */
+margin: auto;
+position: center;
+}
