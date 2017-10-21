@@ -135,13 +135,15 @@ margin: auto;
 border-width: thin;
 border-color: #D3D3D3;
 border-style: outset;
+height: 40px;
 }
 
 /* --- ボックス内の段落 --- */
-div.sectionneo p {
+div.sectionneo h3 {
 margin: 1em 15px 1em 10px; /* 段落のマージン（上右下左） */
 margin: auto;
 position: center;
+height: 40px;
 }
 
 /* --- ボックス --- */
