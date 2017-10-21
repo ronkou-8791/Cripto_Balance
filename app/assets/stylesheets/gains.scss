@@ -19,7 +19,7 @@ color: #000000;
 margin: auto;
 border-width: thin;
 border-color: #D3D3D3;
-border-style: solid;
+border-style: outset;
 }
 
 /* --- 見出し --- */
@@ -35,4 +35,46 @@ div.section p {
 margin: 1em 15px 1em 10px; /* 段落のマージン（上右下左） */
 margin: auto;
 position: center;
+}
+
+/* --- ボックス --- */
+div.sectionneo {
+width: 350px; /* ボックスの幅 */
+padding-bottom: 5px; /* ボックスの下パディング */
+background: #F0FFFF url(maru2_300_bottom.gif) no-repeat bottom; /* ボックスの背景 */
+font-size: 100%;
+color: #000000;
+margin: auto;
+border-width: thin;
+border-color: #D3D3D3;
+border-style: outset;
+}
+
+/* --- ボックス内の段落 --- */
+div.sectionneo p {
+margin: 1em 15px 1em 10px; /* 段落のマージン（上右下左） */
+margin: auto;
+position: center;
+}
+
+/* --- ボックス --- */
+div.sectiongo {
+width: 150px; /* ボックスの幅 */
+padding-bottom: 5px; /* ボックスの下パディング */
+background: #F0FFFF url(maru2_300_bottom.gif) no-repeat bottom; /* ボックスの背景 */
+font-size: 100%;
+color: #000000;
+margin: auto;
+border-width: thick;
+border-color: #D3D3D3;
+border-style: outset;
+height: 40px;
+}
+
+/* --- ボックス内の段落 --- */
+div.sectiongo h3 {
+margin: 1em 15px 1em 10px; /* 段落のマージン（上右下左） */
+margin: auto;
+position: center;
+line-height: 40px;
 }
