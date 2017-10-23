@@ -17,7 +17,7 @@
 
 
   <div class="field">
-    <%= form.label :通貨購入日を選択 %>
+    <%= form.label :通貨購入日を選択〜2017年10月9日まで %>
     <%= form.date_select :create_at, id: :share_create_at %>
   </div>
 
@@ -26,13 +26,13 @@
     <!-- <%= form.select :btcjpy, [["BTC", "BTC"], ["ETH", "ETH"]] ,class:"form-control" %>
   </div> -->
 
-  <div class="field">
+  <div class="fieldneo">
     <!-- <%= form.label :通貨購入量 %> -->
     <%= form.number_field :amount, min:0.000001,max:100,step:0.000001 ,class:"form-control" ,placeholder: "ETH購入量を入力" %>
   </div>
   <br>
   <div class="field">
-    <%= form.label :通貨売却日を選択 %>
+    <%= form.label :通貨売却日を選択〜2017年10月9日まで %>
     <%= form.date_select :ask_create_at, id: :share_ask_create_at %>
   </div>
 
@@ -41,7 +41,7 @@
     <%= form.select :btcjpy, [["BTC", "BTC"], ["ETH", "ETH"]] ,class:"form-control" %>
   </div> -->
 
-  <div class="field">
+  <div class="fieldneo">
     <!-- <%= form.label :通貨売却量 %> -->
     <%= form.number_field :ask, min:0.000001,max:100,step:0.000001 ,class:"form-control" ,placeholder: "ETH売却量を入力" %>
   </div>

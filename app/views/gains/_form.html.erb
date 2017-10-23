@@ -14,11 +14,11 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :通貨購入日を選択 %>
+    <%= form.label :通貨購入日を選択〜2017年9月20日まで %>
     <%= form.date_select :purchase, id: :gain_purchase %>
   </div>
 
-  <div class="field">
+  <div class="fieldneo">
     <!-- <%= form.label :通貨購入量 %> -->
     <!-- <%= form.number_field :purchase_price, id: :gain_purchase_price ,min: 0.01 ,class:"form-control" %> -->
     <!-- 数値 -->
@@ -26,11 +26,11 @@
   </div>
   <br>
   <div class="field">
-    <%= form.label :通貨売却日を選択 %>
+    <%= form.label :通貨売却日を選択〜2017年9月20日まで %>
     <%= form.date_select :sell, id: :gain_sell %>
   </div>
 
-  <div class="field">
+  <div class="fieldneo">
     <!-- <%= form.label :通貨売却量 %> -->
     <%= form.number_field :currrent_price, id: :gain_currrent_price, min:0.000001,max:100,step:0.000001 ,class:"form-control" ,placeholder: "BTC売却量を入力" %>
   </div>

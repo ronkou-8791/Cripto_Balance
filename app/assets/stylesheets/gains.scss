@@ -67,9 +67,9 @@ background: #F0FFFF url(maru2_300_bottom.gif) no-repeat bottom; /* ボックス�
 font-size: 100%;
 color: #000000;
 margin: auto;
-border-width: thick;
+border-width: double;
 border-color: #D3D3D3;
-border-style: outset;
+border-style: solid;
 height: 40px;
 }
 
@@ -79,4 +79,10 @@ margin: 1em 15px 1em 10px; /* 段落のマージン（上右下左） */
 margin: auto;
 position: center;
 line-height: 40px;
+}
+
+.fieldneo {
+width: 200px;
+position: center;
+margin: auto;
 }
