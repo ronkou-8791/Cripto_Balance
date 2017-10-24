@@ -150,13 +150,13 @@ height: 40px;
 div.sectiongo {
 width: 150px; /* ボックスの幅 */
 padding-bottom: 5px; /* ボックスの下パディング */
-background: #F0FFFF url(maru2_300_bottom.gif) no-repeat bottom; /* ボックスの背景 */
+background: #FFFFFF url(maru2_300_bottom.gif) no-repeat bottom; /* ボックスの背景 */
 font-size: 100%;
 color: #000000;
 margin: auto;
 border-width: thin;
 border-color: #F5F5F5;
-border-style: solid;
+border-style: inset;
 height: 40px;
 }
 
@@ -169,7 +169,7 @@ line-height: 40px;
 }
 
 .fieldneo {
-width: 200px;
+width: 250px;
 position: center;
 margin: auto;
 }
