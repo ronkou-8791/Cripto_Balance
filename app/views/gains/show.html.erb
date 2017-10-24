@@ -21,14 +21,14 @@
 <div class="section">
 <p>
   <tr>通貨購入金額</tr>
-  <h5><%= @bit_coin %> JPY</h5>
+  <h5><%= @bit_coin.to_i %> JPY</h5>
 </p>
 </div>
 <br>
 <div class="section">
 <p>
   <tr>通貨売却金額</tr>
-  <h5><%= @ask_coin %> JPY</5>
+  <h5><%= @ask_coin.to_i %> JPY</5>
 </p>
 </div>
 
@@ -36,7 +36,7 @@
 <div class="section">
 <p>
   <h5>通貨売却金額 - 通貨購入金額 = 収支金額</h5>
-  <h1><%= @ask_coin - @bit_coin %> JPY</h1>
+  <h1><%= @ask_coin.to_i - @bit_coin.to_i %> JPY</h1>
 </p>
 </div>
 

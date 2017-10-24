@@ -15,7 +15,7 @@
 </p> -->
 <p>
   <tr>支払ったBTC</tr>
-  <h5><%= @bit_coin %> BTC</h5>
+  <h5><%= @bit_coin.round(8) %> BTC</h5>
 </p>
 </div>
 <br>
@@ -31,14 +31,14 @@
 
 <p>
   <tr>取得したBTC</tr>
-  <h5><%= @ask_coin %> BTC</5>
+  <h5><%= @ask_coin.round(8) %> BTC</5>
 </p>
 </div>
 <br>
 <div class="section">
 <p>
   <h5>取得したBTC - 支払ったBTC = BTCの収支結果</h5>
-  <h1><%= @ask_coin - @bit_coin %> BTC</h1>
+  <h1><%= @ask_coin.round(8) - @bit_coin.round(8) %> BTC</h1>
 </p>
 </div>
 
