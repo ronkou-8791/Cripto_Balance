@@ -8,6 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
   </head>
   <body>
 
@@ -54,12 +55,14 @@
     <%= yield %>
 
     <footer>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <ul>
-     <li><a href="https://poloniex.com/">POLONIEX</a>
-         <a href="https://bittrex.com/">BITTREX</a>
-         <a href="https://bitflyer.jp/">bitFlyer</a>
-         <a href="https://coincheck.com/">coincheck</a>
-         <a href="https://zaif.jp/">Zaif</a></li>
+     <li class="webicon_list">
+      <li class="webicon"><a href="https://poloniex.com/">POLONIEX</a>
+       <a href="https://bittrex.com/">BITTREX</a>
+       <a href="https://bitflyer.jp/">bitFlyer</a>
+       <a href="https://coincheck.com/">coincheck</a>
+       <a href="https://zaif.jp/">Zaif</a></li>
      <!-- <p>共同開発[]</p> -->
     </ul>
 

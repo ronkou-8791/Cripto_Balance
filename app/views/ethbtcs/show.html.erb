@@ -8,7 +8,7 @@
   <tr>通貨購入日:</tr>
   <%= @ethbtc.buy %>
 </p>
-
+<br>
 <!-- <p>
   <tr>ETH購入量:</tr>
   <%= @ethbtc.buy_size %>
@@ -28,10 +28,10 @@
   <tr>ETH売却量:</tr>
   <%= @ethbtc.sell_size %>
 </p> -->
-
+<br>
 <p>
   <tr>取得したBTC</tr>
-  <h5><%= @ask_coin.round(8) %> BTC</5>
+  <h5><%= @ask_coin.floor(8) %> BTC</5>
 </p>
 </div>
 <br>
